@@ -1,0 +1,121 @@
+/* 	Colors
+	Dark blue - #354A5F
+	Blue - #3497DA
+	Red - #E64C3C
+	Green - #2FCB70
+	Yellow - #F39C11
+*/
+
+body {
+	font-family: Lato, sans-serif;
+	background: #354A5F;
+	color: white;
+}
+
+.sidebar-wrapper {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	overflow-y: auto;
+	text-align: right;
+	padding: 0 50px;
+}
+
+.sidebar-title {
+	font-family: Caveat;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: .8em;
+	padding: 50px 0;
+}
+
+.sidebar-subtitle {
+	font-style: italic;
+	padding-bottom: 50px;
+	font-size: 1.2em;
+}
+
+.sidebar-nav {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sidebar-nav-selected {
+	font-weight: 900;
+}
+
+/*
+.sidebar-footer {
+	position: absolute;
+	text-align: right;
+	bottom: 50px;
+	right: 50px;
+}*/
+
+.content-wrapper {
+	position: relative;
+	margin-left: 250px;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.tile {
+	background: white;
+	margin-bottom: 25px;
+}
+
+.tile-img { 
+	height: 15em; 
+	background-size: contain; 
+	background-repeat: 
+	no-repeat; 
+	background-position: bottom right; 
+}
+
+.tile-info {
+	text-align: left;
+	padding: 10px;
+	background: transparent;
+}
+
+.row:nth-child(odd) .col-md-6:nth-child(1) .tile-info {
+	background: #3497DA;
+}
+
+.row:nth-child(odd) .col-md-6:nth-child(2) .tile-info {
+	background: #E64C3C;
+}
+
+.row:nth-child(even) .col-md-6:nth-child(1) .tile-info {
+	background: #2FCB70;
+}
+
+.row:nth-child(even) .col-md-6:nth-child(2) .tile-info {
+	background: #F39C11;
+}
+
+.tile-info-title {
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+@media(max-width:768px) {
+	.sidebar-wrapper {
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sidebar-title {
+		padding: 25px 0;
+	}
+
+	.content-wrapper {
+		margin-left: 0px;
+	}
+
+	.tile {
+		margin-bottom: 30px;
+	}
+}
+
