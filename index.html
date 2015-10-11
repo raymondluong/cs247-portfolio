@@ -7,11 +7,12 @@
     <title>Raymond Luong</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900|Caveat:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+    <div class="background"></div>
     <section>
         <div class="sidebar-wrapper">
             <div class="sidebar-title">
@@ -23,22 +24,22 @@
             <div class="sidebar-nav-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-nav-selected">Portfolio</li>
-                    <li>About</li>
-                    <li>Resume</li>
-                    <li>Contact</li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <!--<div class="sidebar-footer">
+            <div class="sidebar-footer">
                 <i class="fa fa-envelope fa-2x"></i>
                 <i class="fa fa-linkedin fa-2x"></i>
-            </div>-->
+            </div>
         </div>
         <div class="content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="tile">
-                            <img class="img-responsive" src="assets/symantecdashboard.png">
+                            <img class="tile-img img-responsive" id="symantecdashboard" src="images/symantecdashboard.png">
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Deployment Pipeline Dashboard
@@ -51,7 +52,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="tile">
-                            <img class="img-responsive" src="assets/symantecvis.png">
+                            <img class="tile-img img-responsive" id="symantecvis" src="images/symantecvis.png">
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Machine Network Visualization
@@ -66,7 +67,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="tile">
-                            <img class="img-responsive" src="assets/missionnutrition.png">
+                            <img class="tile-img img-responsive" id="missionnutrition" src="images/missionnutrition.png">
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Mission Nutrition
@@ -79,7 +80,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="tile">
-                            <img class="img-responsive" src="assets/apo.png">
+                            <img class="tile-img img-responsive" id="apo" src="images/apo.png">
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Graphic Design
@@ -96,7 +97,7 @@
         </div>
     </section>
 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tile.js"></script>
 </body>
 </html>

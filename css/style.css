@@ -12,6 +12,17 @@ body {
 	color: white;
 }
 
+.background {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url('../images/cityblue.jpg') no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
 .sidebar-wrapper {
 	position: fixed;
 	width: 250px;
@@ -19,6 +30,8 @@ body {
 	overflow-y: auto;
 	text-align: right;
 	padding: 0 50px;
+	margin-right: 50px;
+	background: transparent;
 }
 
 .sidebar-title {
@@ -38,10 +51,22 @@ body {
 .sidebar-nav {
 	list-style-type: none;
 	padding: 0;
+	color: #3497DA;
+	color: black;
+}
+
+.sidebar-nav a {
+	color: inherit;
+}
+
+.sidebar-nav a:hover {
+	text-decoration: none;
+	color: #FFF;
 }
 
 .sidebar-nav-selected {
 	font-weight: 900;
+	color: #FFF;
 }
 
 /*
@@ -57,19 +82,37 @@ body {
 	margin-left: 250px;
 	text-align: center;
 	padding-top: 25px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: transparent;
 }
 
 .tile {
 	background: white;
 	margin-bottom: 25px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
+.tile-fade {
+	opacity: .3;
+}
+
+/*
 .tile-img { 
 	height: 15em; 
 	background-size: contain; 
 	background-repeat: 
 	no-repeat; 
 	background-position: bottom right; 
+}*/
+
+.tile-img:hover {
+	cursor: pointer;
 }
 
 .tile-info {
@@ -99,6 +142,7 @@ body {
 	font-weight: 700;
 }
 
+/* Mobile-friendly styling */
 @media(max-width:768px) {
 	.sidebar-wrapper {
 		position: relative;
@@ -110,6 +154,15 @@ body {
 		padding: 25px 0;
 	}
 
+	.sidebar-subtitle {
+		padding-bottom: 25px;
+	}
+
+	.sidebar-nav li {
+		display: inline;
+		padding: 0 10px;
+	}
+
 	.content-wrapper {
 		margin-left: 0px;
 	}
@@ -117,5 +170,11 @@ body {
 	.tile {
 		margin-bottom: 30px;
 	}
+
+	.tile-fade {
+		opacity: 1;
+	}
 }
+
+
 
