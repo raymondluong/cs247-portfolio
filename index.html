@@ -4,55 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Raymond Luong</title>
+    <title>Raymond Luong | Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/tile.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900|Caveat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="background"></div>
-    <section>
+    <div class="background fade-in"></div>
+    <div class="main-container">
         <div class="sidebar-wrapper">
-            <div class="sidebar-title">
+            <div class="sidebar-title fade-in">
                 Raymond Luong
             </div>
-            <div class="sidebar-subtitle">
-                Software developer and designer
+            <div class="sidebar-subtitle fade-in delay-one">
+                Software developer, UI/UX designer, and lifelong learner. Welcome to my portfolio!
             </div>
-            <div class="sidebar-nav-wrapper">
-                <ul class="sidebar-nav">
-                    <li class="sidebar-nav-selected">Portfolio</li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-footer">
-                <i class="fa fa-envelope fa-2x"></i>
-                <i class="fa fa-linkedin fa-2x"></i>
+            <div class="sidebar-nav-wrapper fade-in delay-one">
+                <span class="btn sidebar-nav-btn sidebar-nav-btn--selected js-nav-btn" id="portfolio">Portfolio</span>
+                <span class="btn sidebar-nav-btn js-nav-btn" id="about">About</span>
+                <span class="btn sidebar-nav-btn js-nav-btn" id="contact">Contact</span>
             </div>
         </div>
-        <div class="content-wrapper">
+
+        <div class="content-wrapper fade-in delay-one">
+            <div class="scroll-helper fade-in delay-three">
+                Scroll down to view more projects!
+            </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="tile">
-                            <img class="tile-img img-responsive" id="symantecdashboard" src="images/symantecdashboard.png">
-                            <div class="tile-info">
-                                <div class="tile-info-title">
-                                    Deployment Pipeline Dashboard
-                                </div>
-                                <div class="tile-info-text">
-                                    Software Engineering Intern at Symantec
-                                </div>
+                            <div class="tile-img-wrapper">
+                                <img class="tile-img img-responsive" src="images/symantecvis.png" id="symantecvis">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="tile">
-                            <img class="tile-img img-responsive" id="symantecvis" src="images/symantecvis.png">
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Machine Network Visualization
@@ -63,11 +50,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="tile">
-                            <img class="tile-img img-responsive" id="missionnutrition" src="images/missionnutrition.png">
+                            <div class="tile-img-wrapper">
+                                <img class="tile-img img-responsive" src="images/missionnutrition.png" id="missionnutrition">
+                            </div>
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Mission Nutrition
@@ -78,9 +65,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="tile">
-                            <img class="tile-img img-responsive" id="apo" src="images/apo.png">
+                            <div class="tile-img-wrapper">
+                                <img class="tile-img img-responsive" src="images/symantecdashboard.png" id="symantecdashboard">
+                            </div>
+                            <div class="tile-info">
+                                <div class="tile-info-title">
+                                    Deployment Pipeline Dashboard
+                                </div>
+                                <div class="tile-info-text">
+                                    Software Engineering Intern at Symantec
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="tile">
+                            <div class="tile-img-wrapper">
+                                <img class="tile-img img-responsive" id="apo" src="images/apo.png">
+                            </div>
                             <div class="tile-info">
                                 <div class="tile-info-title">
                                     Graphic Design
@@ -92,12 +96,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section>
-
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/tile.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
